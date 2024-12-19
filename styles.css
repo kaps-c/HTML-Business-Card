@@ -1,0 +1,45 @@
+body {
+    margin: 20px;
+    /* Note: add web safe fonts here */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #CFDCF8;
+    color: #373f47;
+    border-bottom: 6px double #C8B6FF;
+    border-right: 6px double #C8B6FF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: bkg-animation;
+    animation-duration: 4s;
+}
+
+/* curve image border */
+img {
+    border-radius: 4px;
+}
+
+/* hover effect for text */
+.word-shadows:hover {
+    color: #F4F8FF;
+    text-shadow: 0px 0px 8px #373f47;
+}
+
+/* background animation */
+@keyframes bkg-animation {
+    0% {background-color: #E2CFEA;}
+    50% {background-color: #CECDF7;}
+    100% {background-color: #CFDCF8;}
+}
+
